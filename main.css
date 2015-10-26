@@ -1,0 +1,65 @@
+#player-mole-container {
+  background: none;
+}
+
+h1#radio-title {
+  z-index: 9999;
+  padding: 8px 10px;
+  color: white;
+  font-size: 23px;
+  font-weight: 300;
+  position: absolute;
+  -webkit-transition: all .5s ease;
+  -webkit-transform: translateX(0);
+}
+
+h1#radio-title a {
+  color: lightgreen;
+  text-decoration: underline;
+  font-size: 18px;
+  display: inline-block;
+}
+
+/* RADIO ON (DEFAULT) */
+
+.player-height {
+  height: 90px !important;
+}
+
+video {
+  display: none !important;
+}
+
+.ytp-chrome-bottom, .html5-video-player {
+  opacity: 1 !important;
+  background: rgb(0, 150, 136) !important;
+}
+
+
+.ytp-preview, .ytp-gradient-bottom {
+  display: none !important;
+}
+/* END OF RADIO ON */
+
+/* RADIO OFF (AFTER DISMISSING) */
+.dismiss-youtube-radio video {
+  display: block !important;
+}
+
+.dismiss-youtube-radio .ytp-chrome-bottom, .dismiss-youtube-radio .html5-video-player {
+  opacity: 1 !important;
+  background: rgba(0,0,0,0.5) !important;
+}
+
+.dismiss-youtube-radio .ytp-preview, .dismiss-youtube-radio .ytp-gradient-bottom {
+  display: none !important;
+}
+
+.dismiss-youtube-radio h1#radio-title {
+  -webkit-transform: translateX(-164px);
+}
+
+.dismiss-youtube-radio h1#radio-title a {
+  margin-left: 10px;
+}
+/* END OF RADIO OFF */
