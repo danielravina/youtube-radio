@@ -30,7 +30,7 @@
     // #player-api is the video master-wrapper
     $('#player-api').attr('style', 'height:' + newHeight + 'px !important;');
     // #player-mole-container is the element that pushes the rest of the content down
-    $("#player-mole-container").css('height', (newHeight - newHeight*0.24) + "px" );
+    $("#player-mole-container").css('height', (newHeight - currentHeight*0.1) + "px" );
   }
 
   var hideVideo = function() {
