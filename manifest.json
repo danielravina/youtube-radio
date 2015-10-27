@@ -3,7 +3,11 @@
   "name": "Youtube Radio",
   "version": "0.0.1",
   "description": "Turn youtube videos into an 'audio only' player so you can enjoy music without the distraction of the video.",
-  "icons": {},
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "author": "Daniel Ravina",
    "content_scripts": [
     {
@@ -11,5 +15,8 @@
       "js": ["jquery.js","main.js"],
       "css": ["main.css"]
     }
+  ],
+  "web_accessible_resources": [
+    "fonts/*"
   ]
 }
